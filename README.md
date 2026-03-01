@@ -374,8 +374,6 @@ biometric_access/
 
 ### Current Implementation (Prototype)
 
-⚠️ **This is a proof-of-concept. Do NOT use in production without:**
-
 1. **Production-Grade Fuzzy Extractor**
    - Current implementation uses a placeholder
    - Use battle-tested libraries like [Fuzzy Extractors](https://eprint.iacr.org/2003/235.pdf) with error correction
@@ -409,16 +407,16 @@ biometric_access/
 ### Threat Model
 
 **Protected against:**
-- ✅ Centralized database breaches
-- ✅ Admin tampering with access logs
-- ✅ Unauthorized access without valid biometric
-- ✅ Biometric data leakage (never stored)
+- Centralized database breaches
+- Admin tampering with access logs
+- Unauthorized access without valid biometric
+- Biometric data leakage (never stored)
 
 **Vulnerable to:**
-- ❌ Device compromise (malware stealing keypair)
-- ❌ Sophisticated biometric spoofing (3D-printed fingerprints)
-- ❌ Physical coercion (forcing user to authenticate)
-- ❌ Quantum computing (future threat to SHA-256)
+- Device compromise (malware stealing keypair)
+- Sophisticated biometric spoofing (3D-printed fingerprints)
+- Physical coercion (forcing user to authenticate)
+- Quantum computing (future threat to SHA-256)
 
 ---
 
@@ -458,15 +456,5 @@ anchor test --skip-local-validator
 5. Grant access: Edit `scripts/grant-access.ts` with user pubkey and commitment
 6. View in dashboard: Open http://localhost:5173/
 
----
 
-## 📚 Resources
-
-- [Solana Documentation](https://docs.solana.com/)
-- [Anchor Framework](https://www.anchor-lang.com/)
-- [Fuzzy Extractors Paper](https://eprint.iacr.org/2003/235.pdf)
-- [Zero-Knowledge Proofs](https://en.wikipedia.org/wiki/Zero-knowledge_proof)
-- [Biometric Security Best Practices](https://www.nist.gov/itl/iad/biometrics)
-
----
 
