@@ -1,5 +1,7 @@
 # B-SAFE — Biometric Solana-based Access Framework with Fuzzy Extractors
 
+This work is part of my master’s thesis at AGH University of Science and Technology
+
 A decentralized biometric access control system built on Solana using fuzzy extractors and zero-knowledge proofs. Users authenticate with their biometric data (fingerprint/face) without ever revealing it to the blockchain or any central authority.
 
 ---
